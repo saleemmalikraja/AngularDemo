@@ -27,6 +27,10 @@ import { ChildOneComponent } from './child-one/child-one.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildTwoComponent } from './child-two/child-two.component';
 import { ParentTwoComponent } from './parent-two/parent-two.component';
+import { ObjservableTestComponent } from './objservable-test/objservable-test.component';
+import { SubjectTestComponent } from './subject-test/subject-test.component';
+import { ListSmartComponent } from './list-smart/list-smart.component';
+import { HostBindingListenerComponent } from './host-binding-listener/host-binding-listener.component';
 
 const appRoutes: Routes = [
   { path: 'first-page', component: FirstPageComponent },
@@ -35,6 +39,8 @@ const appRoutes: Routes = [
   { path: 'custom-elements', component: CustomCompComponent },
   { path: 'c1-p', component: ParentComponent },
   { path: 'c2-p2', component: ParentTwoComponent },
+  { path: 'observable', component: ObjservableTestComponent },
+  { path: 'subject', component: SubjectTestComponent },
   { path: '', redirectTo: 'first-page', pathMatch: 'full' },
   { path: '**', redirectTo: 'first-page' }
 ];
@@ -51,7 +57,11 @@ const appRoutes: Routes = [
     ChildOneComponent,
     ParentComponent,
     ChildTwoComponent,
-    ParentTwoComponent
+    ParentTwoComponent,
+    ObjservableTestComponent,
+    SubjectTestComponent,
+    ListSmartComponent,
+    HostBindingListenerComponent
   ],
   imports: [
     BrowserModule,
