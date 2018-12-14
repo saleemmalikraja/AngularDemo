@@ -41,6 +41,7 @@ const appRoutes: Routes = [
   { path: 'c2-p2', component: ParentTwoComponent },
   { path: 'observable', component: ObjservableTestComponent },
   { path: 'subject', component: SubjectTestComponent },
+  { path: 'host', component: HostBindingListenerComponent },
   { path: '', redirectTo: 'first-page', pathMatch: 'full' },
   { path: '**', redirectTo: 'first-page' }
 ];
