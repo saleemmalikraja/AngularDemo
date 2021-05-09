@@ -82,7 +82,7 @@ const appRoutes: Routes = [
     FormsModule,
     InMemoryWebApiModule.forRoot(FakeBackendService),
     BrowserAnimationsModule,
-    RouterModule.forRoot(appRoutes , {useHash: true}),
+    RouterModule.forRoot(appRoutes , { useHash: true, relativeLinkResolution: 'legacy' }),
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,

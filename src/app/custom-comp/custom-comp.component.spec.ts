@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { CustomCompComponent } from './custom-comp.component';
 
@@ -6,7 +6,7 @@ describe('CustomCompComponent', () => {
   let component: CustomCompComponent;
   let fixture: ComponentFixture<CustomCompComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ CustomCompComponent ]
     })

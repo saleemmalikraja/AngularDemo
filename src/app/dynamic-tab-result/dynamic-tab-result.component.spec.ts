@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { DynamicTabResultComponent } from './dynamic-tab-result.component';
 
@@ -6,7 +6,7 @@ describe('DynamicTabResultComponent', () => {
   let component: DynamicTabResultComponent;
   let fixture: ComponentFixture<DynamicTabResultComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ DynamicTabResultComponent ]
     })

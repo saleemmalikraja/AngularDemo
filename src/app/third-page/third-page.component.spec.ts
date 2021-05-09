@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ThirdPageComponent } from './third-page.component';
 
@@ -6,7 +6,7 @@ describe('ThirdPageComponent', () => {
   let component: ThirdPageComponent;
   let fixture: ComponentFixture<ThirdPageComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ThirdPageComponent ]
     })
