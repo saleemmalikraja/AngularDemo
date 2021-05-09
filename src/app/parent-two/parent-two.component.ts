@@ -9,7 +9,7 @@ import { ChildTwoComponent } from '../child-two/child-two.component';
 export class ParentTwoComponent implements  AfterViewInit  {
 
   messageTwo: string;
-  @ViewChild(ChildTwoComponent, {static: false}) childTwo;
+  @ViewChild(ChildTwoComponent) childTwo;
   constructor() { }
 
   ngAfterViewInit(): void { // child to parent implements AfterViewInit

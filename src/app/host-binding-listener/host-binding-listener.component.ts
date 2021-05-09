@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, Renderer } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import {
   Directive,
   HostBinding,
@@ -30,13 +30,13 @@ export class HostBindingListenerComponent implements OnInit {
   }
 
   constructor(private el: ElementRef,
-    private renderer: Renderer) {
+    private renderer: Renderer2) {
     this.elementRef = el;
     this.render = renderer;
   }
 
   ngOnInit() {
     const part = this.elementRef.nativeElement.querySelector('.host-class');
-    this.renderer.setElementStyle(part, 'backgroundColor', 'gray');
+    this.renderer.setStyle(part, 'backgroundColor', 'gray');
   }
 }

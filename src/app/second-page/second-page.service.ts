@@ -1,11 +1,11 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 // import 'rxjs/Rx'; this will load all features
 @Injectable()
 export class SecondPageService {
   base_url = 'http://mybackend.com/api/';
   tasks_endpoint = 'tasks';
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   // Gets all tasks
   getTasks() {
