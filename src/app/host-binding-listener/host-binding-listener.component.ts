@@ -5,7 +5,7 @@ import {
   HostListener
 } from '@angular/core';
 @Component({
-  // tslint:disable-next-line:component-selector
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: '[app-host-binding-listener]',
   templateUrl: './host-binding-listener.component.html',
   styleUrls: ['./host-binding-listener.component.css']
