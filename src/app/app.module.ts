@@ -47,7 +47,7 @@ const appRoutes: Routes = [
   { path: 'subject', component: SubjectTestComponent },
   { path: 'host', component: HostBindingListenerComponent },
   { path: 'dynamic-tab', component: DynamicTabResultComponent },
-  { path: 'on-push', loadChildren: './changedetection/changedetection.module#ChangedetectionModule' },
+  { path: 'on-push', loadChildren: () => import('./changedetection/changedetection.module').then(m => m.ChangedetectionModule) },
   { path: '', redirectTo: 'first-page', pathMatch: 'full' },
   { path: '**', redirectTo: 'first-page' }
 ];
