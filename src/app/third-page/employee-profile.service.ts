@@ -1,11 +1,11 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
 
 @Injectable()
 export class EmployeeProfileService {
   base_url = 'http://mybackend.com/api/';
   empProfile_endpoint = 'empDetail';
-  constructor(private http: Http) {}
+  constructor(private http: HttpClient) {}
 
   // Gets all tasks
   getEmployeeProfileDetails() {
