@@ -16,7 +16,6 @@ import { ThirdPageComponent } from './third-page/third-page.component';
 import { SecondPageService } from './second-page/second-page.service';
 
 
-import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { FakeBackendService } from 'src/app/fake-backend/fake-backend.service';
@@ -34,6 +33,7 @@ import { HostBindingListenerComponent } from './host-binding-listener/host-bindi
 import { DynamicTabResultComponent } from './dynamic-tab-result/dynamic-tab-result.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { DynamicTabDumbComponent } from './dynamic-tab-dumb/dynamic-tab-dumb.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const appRoutes: Routes = [
@@ -74,7 +74,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     InMemoryWebApiModule.forRoot(FakeBackendService),
     BrowserAnimationsModule,
